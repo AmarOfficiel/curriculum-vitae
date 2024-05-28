@@ -1,0 +1,32 @@
+[
+  {
+    "name": "React",
+    "src": "./images/icon/reactIcon.svg",
+    "alt": "Icon React Native"
+  },
+  {
+    "name": "SASS",
+    "src": "./images/icon/sassIcon.svg",
+    "alt": "Icon Sass"
+  },
+  {
+    "name": "Figma",
+    "src": "./images/icon/figmaIcon.svg",
+    "alt": "Icon Figma"
+  },
+  {
+    "name": "HTML",
+    "src": "./images/icon/htmlIcon.svg",
+    "alt": "Icon HTML"
+  },
+  {
+    "name": "CSS",
+    "src": "./images/icon/cssIcon.svg",
+    "alt": "Icon CSS"
+  },
+  {
+    "name": "Javascript",
+    "src": "./images/icon/javascriptIcon.svg",
+    "alt": "Icon Javascript"
+  }
+]

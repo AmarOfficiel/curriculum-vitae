@@ -1,0 +1,73 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color-primary: #f5f1eb;
+  --color-secondary: #f9f7f3;
+  --color-primary-text: #1f2125;
+  --color-first-accent: 0, 110, 255;
+  --color-second-accent: 255, 173, 102;
+  --color-tertiary-accent: 77, 77, 77;
+}
+a {
+  text-decoration: none;
+  color: var(--color-primary-text);
+}
+body {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+  font-family: var(--font-TitilliumWeb);
+}
+::selection {
+  color: var(--color-secondary);
+  background: rgba(var(--color-tertiary-accent),1);
+}
+
+.df-jcc-aic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-paragraph {
+  font-family: var(--font-TitilliumWeb);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.text-paragraph-medium {
+  font-family: var(--font-TitilliumWeb);
+  font-weight: 600;
+  font-size: 0.90rem;
+}
+
+.text-subtitle {
+  font-family: var(--font-TitilliumWeb);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.text-title {
+  font-family: var(--font-TitilliumWeb);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.text-huge {
+  font-family: var(--font-TitilliumWeb);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.g5 {
+  gap: 10px;
+}
+
+.relative{
+  position: relative;
+}
