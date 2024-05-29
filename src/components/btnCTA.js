@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import style from "@/styles/btnCTA.module.scss";
 
-export default function btnCTA({ text, color}) {
+export default function BtnCTA({ text, color}) {
   return (
     <>
       <section

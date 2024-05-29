@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import React from "react";
 import styles from "@/styles/form.module.scss";
 
-export default function form() {
+export default function Form() {
   // const spawnMessageProblem = document.getElementById("spawnMessageProblem")
   const handleSubmit = (e) => {
     e.preventDefault();

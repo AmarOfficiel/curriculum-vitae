@@ -17,7 +17,7 @@ export default function firstSection() {
             A web frontend student. I study web development and learn all day
           </h1>
           <p>
-            I'm a web frontend student. Winner of the citizen of wallonia
+            I&apos;m a web frontend student. Winner of the citizen of wallonia
             hackathon student prize. Determined to always do better.
           </p>
           <BtnCTA text="Contact me" color="colorFirstAccent" />

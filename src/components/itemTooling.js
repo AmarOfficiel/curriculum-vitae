@@ -20,7 +20,7 @@ export default function InfoBox() {
   return (
     <section className={`${style.container}`}>
       {icon.map((item) => (
-        <div className={`${style.item}`}>
+        <div className={`${style.item}`} key={item}>
           <img src={item.src} alt={item.alt} className={`${style.img}`} />
           <p className="text-paragraph">{item.name}</p>
         </div>
