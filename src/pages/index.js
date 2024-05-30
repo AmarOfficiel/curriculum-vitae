@@ -1,8 +1,10 @@
+import React, { useRef, useState } from "react";
 import Head from "next/head";
 import { Titillium_Web } from "next/font/google";
 import FirstSection from "@/components/firstSection.js";
 import SecondSection from "@/components/secondSection.js";
 import ThirdSection from "@/components/thirdSection.js";
+import Nav from "@/components/nav.js";
 import styles from "@/styles/Home.module.scss";
 
 const TitilliumWeb = Titillium_Web({
@@ -12,6 +14,11 @@ const TitilliumWeb = Titillium_Web({
 });
 
 export default function Home() {
+  const introRef = useRef(null);
+  const timelineRef = useRef(null);
+  const contactRef = useRef(null);
+  const [visible, setVisible] = useState(1);
+
   return (
     <>
       <Head>
@@ -23,9 +30,18 @@ export default function Home() {
       <main
         className={`${TitilliumWeb.variable} ${styles.container} text-paragraph`}
       >
-        <FirstSection /> {/* intro section */}
-        <SecondSection /> {/* portfolio/history section */}
-        <ThirdSection /> {/* contact section */}
+        <Nav
+          introRef={introRef}
+          timelineRef={timelineRef}
+          contactRef={contactRef}
+          visible={visible}
+        />
+        {/* intro section */}
+        <FirstSection introRef={introRef} setVisible={setVisible} />
+        {/* portfolio/history section */}
+        <SecondSection timelineRef={timelineRef} setVisible={setVisible} />
+        {/* contact section */}
+        <ThirdSection contactRef={contactRef} setVisible={setVisible} />
       </main>
     </>
   );

@@ -1,10 +1,22 @@
 import ToolingItem from "@/components/itemTooling.js";
 import BtnCTA from "@/components/btnCTA.js";
 import style from "@/styles/firstSection.module.scss";
+import { useEffect } from "react";
 
-export default function firstSection() {
+export default function FirstSection({ introRef, setVisible }) {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.map((entry) => {
+          entry.isIntersecting && setVisible(1);
+        });
+      },
+      { threshold: 0.51 }
+    );
+    introRef.current && observer.observe(introRef.current);
+  }, [introRef]);
   return (
-    <section className={`${`${style.container}`}`}>
+    <section className={`${`${style.container}`}`} ref={introRef}>
       <section className={`${`${style.containerIntro}`}`}>
         <div>
           <p className={`${`${style.containerPresentation}`}`}>

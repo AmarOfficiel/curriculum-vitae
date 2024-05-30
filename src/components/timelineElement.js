@@ -28,7 +28,11 @@ export default function TimelineElement() {
           </div>
           <div className={`${style.containerCard}`}>
             <div className={`${style.containerImg}`}>
-              <img src={item.card.image.src} alt={item.card.image.alt} />
+              <img
+                src={item.card.image.src}
+                alt={item.card.image.alt}
+                className={`${style.itemImg}`}
+              />
             </div>
             <div className={`${style.containerGlobalDescription}`}>
               <div className={`${style.containerDate}`}>
