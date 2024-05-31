@@ -1,52 +1,84 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
 }
-.containerIntro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
-}
-
-.emoji{
-    scale: 1.2;
-    animation: 3s linear 1s infinite scaleEmoji;
-}
-.containerPresentation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(var(--color-first-accent),0.2);
-    padding: 10px;
-    border-radius: 8px;
-    gap: 10px;
-    width: fit-content;
+.containerIntro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 25px;
+  width: 100%;
 }
 
-.containerQuickPresentation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-direction: column;
+.emoji {
+  scale: 1.2;
+  animation: 3s linear 1s infinite scaleEmoji;
+}
+.containerPresentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(var(--color-first-accent), 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  gap: 10px;
 }
 
-.containerIntro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 25px;
+.containerQuickPresentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.containerIntroText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.containerButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes scaleEmoji {
-  0%   {transform: scale(1.2);}
-  50%  {transform: scale(1.4) rotate(0.02turn);}
-  100% {transform: scale(1.2);}
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.4) rotate(0.02turn);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  // .container{
+  //     height: 50vh;
+  // }
+  .containerIntro {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .containerIntroText {
+    width: 450px;
+  }
+  .itemImgIntro {
+    height: 450px;
+  }
+//   .containerButton {
+//     width: 100%;
+//     display: flex;
+//   }
 }

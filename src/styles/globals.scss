@@ -25,7 +25,7 @@ body {
 ::selection {
   border-radius: 20px;
   color: var(--color-secondary);
-  background: rgba(var(--color-tertiary-accent),0.8);
+  background: rgba(var(--color-tertiary-accent), 0.8);
 }
 
 .df-jcc-aic {
@@ -44,7 +44,7 @@ body {
 .text-paragraph-medium {
   font-family: var(--font-TitilliumWeb);
   font-weight: 600;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
 }
 
 .text-subtitle {
@@ -69,6 +69,28 @@ body {
   gap: 10px;
 }
 
-.relative{
+.relative {
   position: relative;
 }
+
+// @media screen and (min-width: 1024px) {
+//   .text-paragraph {
+//     font-size: 0.86rem;
+//   }
+
+//   .text-paragraph-medium {
+//     font-size: 0.91rem;
+//   }
+
+//   .text-subtitle {
+//     font-size: 1.3rem;
+//   }
+
+//   .text-title {
+//     font-size: 1.6rem;
+//   }
+
+//   .text-huge {
+//     font-size: 2rem;
+//   }
+// }

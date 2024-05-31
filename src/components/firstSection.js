@@ -18,21 +18,25 @@ export default function FirstSection({ introRef, setVisible }) {
   return (
     <section className={`${`${style.container}`}`} ref={introRef}>
       <section className={`${`${style.containerIntro}`}`}>
-        <div>
-          <p className={`${`${style.containerPresentation}`}`}>
-            <span className={`${`${style.emoji}`}`}>✌</span>Hi there! I’m
-            Amaury
-          </p>
-        </div>
-        <div className={`${`${style.containerQuickPresentation}`}`}>
-          <h1 className={`text-huge`}>
-            A web frontend student. I study web development and learn all day
-          </h1>
-          <p>
-            I&apos;m a web frontend student. Winner of the citizen of wallonia
-            hackathon student prize. Determined to always do better.
-          </p>
-          <BtnCTA text="Contact me" color="colorFirstAccent" />
+        <div className={`${`${style.containerIntroText}`}`}>
+          <div>
+            <p className={`${`${style.containerPresentation}`}`}>
+              <span className={`${`${style.emoji}`}`}>✌</span>Hi there! I’m
+              Amaury
+            </p>
+          </div>
+          <div className={`${`${style.containerQuickPresentation}`}`}>
+            <h1 className={`text-huge`}>
+              A web frontend student. I study web development and learn all day
+            </h1>
+            <p>
+              I&apos;m a web frontend student. Winner of the citizen of wallonia
+              hackathon student prize. Determined to always do better.
+            </p>
+            <div className={`${`${style.containerButton}`}`}>
+              <BtnCTA text="Contact me" color="colorFirstAccent" />
+            </div>
+          </div>
         </div>
         <div className={`${`${style.containerImgIntro}`}`}>
           <img

@@ -1,10 +1,10 @@
-.containerTimeline{
+.containerTimeline {
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
 
-.containerCardAndYear{
+.containerCardAndYear {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -18,7 +18,7 @@
   width: 360px;
   padding: 15px;
   background-color: var(--color-secondary);
-  border-radius:20px;
+  border-radius: 20px;
   box-shadow: 0px 4px 5px rgba(var(--color-second-accent), 0.3);
 }
 
@@ -30,7 +30,7 @@
   border-radius: 20px;
 }
 
-.containerGlobalDescription{
+.containerGlobalDescription {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@
   gap: 10px;
 }
 
-.containerDate{
+.containerDate {
   width: 100%;
   display: flex;
   // justify-content: space-between;
@@ -47,13 +47,26 @@
   flex-direction: row;
 }
 
-.containerDescription{
+.containerDescription {
   text-align: justify;
 }
 
-.containerCTA{
+.containerCTA {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCard {
+    flex-direction: row;
+    width: auto;
+  }
+  .containerGlobalDescription{
+    width: 325px;
+  }
+  .containerImg{
+    width: 300px;
+  }
 }

@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import BtnCTA from "@/components/btnCTA.js";
 import Link from "next/link";
 import style from "@/styles/timelineElement.module.scss";
@@ -39,18 +39,15 @@ export default function TimelineElement() {
                 <p className={`text-paragraph-medium`}>
                   {item.card.titleOfProject}
                 </p>
-                <p className={`text-paragraph`}>{item.card.dateOfInit}</p>
+                <p className={`text-paragraph`}>{item.dateOfInit}</p>
               </div>
               <div className={`${style.containerDescription}`}>
                 <p className={`text-paragraph`}>{item.card.description}</p>
               </div>
               <div className={`${style.containerCTA}`}>
-                <Link href={item.card.link}>
-                  <BtnCTA
-                    text="Go on reposit github"
-                    color="colorSecondAccent"
-                  />
-                </Link>
+                {/* <Link href={item.cards.link}> */}
+                <BtnCTA text="Go on reposit github" color="colorSecondAccent" />
+                {/* </Link> */}
               </div>
             </div>
           </div>
