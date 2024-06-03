@@ -26,31 +26,48 @@ export default function TimelineElement() {
           <div className={`${style.containerYear}`}>
             <p className={`text-subtitle ${style.itemYear}`}>{item.year}</p>
           </div>
-          <div className={`${style.containerCard}`}>
-            <div className={`${style.containerImg}`}>
-              <img
-                src={item.card.image.src}
-                alt={item.card.image.alt}
-                className={`${style.itemImg}`}
-              />
-            </div>
-            <div className={`${style.containerGlobalDescription}`}>
-              <div className={`${style.containerDate}`}>
-                <p className={`text-paragraph-medium`}>
-                  {item.card.titleOfProject}
-                </p>
-                <p className={`text-paragraph`}>{item.dateOfInit}</p>
+          <section className={`${style.containerAllCard}`}>
+            {item.cards.map((i) => (
+              <div className={`${style.containerCard}`} key={i}>
+                <div className={`${style.containerImg}`}>
+                  <img
+                    src={i.image.src}
+                    alt={i.image.alt}
+                    className={`${style.itemImg}`}
+                  />
+                </div>
+                <div className={`${style.containerGlobalDescription}`}>
+                  <div className={`${style.containerDate}`}>
+                    <p className={`text-paragraph-medium`}>
+                      {i.titleOfProject}
+                    </p>
+                    <p className={`text-paragraph`}>{i.dateOfInit}</p>
+                  </div>
+                  <div className={`${style.containerDescription}`}>
+                    <p className={`text-paragraph`}>{i.description}</p>
+                  </div>
+                  <div className={`${style.containerCTA}`}>
+                    {i.links.github && (
+                      <Link target="_blank" href={i.links.github}>
+                        <BtnCTA
+                          text="Reposit github"
+                          color="colorSecondAccent"
+                        />
+                      </Link>
+                    )}
+                    {i.links.website && (
+                      <Link target="_blank" href={i.links.github}>
+                        <BtnCTA
+                          text="Website"
+                          color="colorSecondAccent"
+                        />
+                      </Link>
+                    )}
+                  </div>
+                </div>
               </div>
-              <div className={`${style.containerDescription}`}>
-                <p className={`text-paragraph`}>{item.card.description}</p>
-              </div>
-              <div className={`${style.containerCTA}`}>
-                {/* <Link href={item.cards.link}> */}
-                <BtnCTA text="Go on reposit github" color="colorSecondAccent" />
-                {/* </Link> */}
-              </div>
-            </div>
-          </div>
+            ))}
+          </section>
         </section>
       ))}
     </section>

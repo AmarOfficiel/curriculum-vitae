@@ -31,7 +31,8 @@ export default function FirstSection({ introRef, setVisible }) {
             </h1>
             <p>
               I&apos;m a web frontend student. Winner of the citizen of wallonia
-              hackathon student prize. Determined to always do better.
+              hackathon prize for the Best Student Project. Determined to
+              always do better.
             </p>
             <div className={`${`${style.containerButton}`}`}>
               <BtnCTA text="Contact me" color="colorFirstAccent" />

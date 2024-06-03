@@ -30,6 +30,7 @@ export default function Home() {
       <main
         className={`${TitilliumWeb.variable} ${styles.container} text-paragraph`}
       >
+        {/* intro section */}
         <Nav
           introRef={introRef}
           timelineRef={timelineRef}

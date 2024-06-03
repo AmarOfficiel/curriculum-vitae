@@ -1,28 +1,51 @@
 [
   {
     "year": "2024",
-    "card": {
-      "image": {
-        "src": "/images/amauryLogo.png",
-        "alt": "This is my logo"
-      },
-      "titleOfProject": "My  curriculum vitae",
-      "dateOfInit": "7th June",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, neque vitae cursus fringilla, nisl felis fermentum lectus, eu mattis eros massa non lectus. Praesent eget enim lectus. Maecenas finibus varius congue. Integer tempor orci nisi. Donec cursus aliquet diam, at consequat ligula mollis in. Fusce a fermentum erat, a volutpat nulla. Aenean lobortis nibh nec imperdiet luctus. Donec sed tempor leo, sit amet lacinia nisl. Etiam convallis turpis vel odio eleifend tristique. Aenean est elit, condimentum eu velit eget, commodo feugiat nunc. Quisque eget rutrum purus, at vehicula magna. Nullam rutrum commodo erat, quis tempor nisl faucibus ut. Cras id ligula nec orci pulvinar pretium. Aliquam condimentum eros sed faucibus dictum. Aliquam vestibulum diam dolor, eu rhoncus nunc faucibus eget.",
-      "link": "https://github.com/AmarOfficiel/curriculum-vitae"
-    }
+    "cards": [
+      {
+        "image": {
+          "src": "/images/amauryLogo.png",
+          "alt": "This is my logo"
+        },
+        "titleOfProject": "My  curriculum vitae",
+        "dateOfInit": "7th June",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, neque vitae cursus fringilla, nisl felis fermentum lectus, eu mattis eros massa non lectus. Praesent eget enim lectus. Maecenas finibus varius congue. Integer tempor orci nisi. Donec cursus aliquet diam, at consequat ligula mollis in. Fusce a fermentum erat, a volutpat nulla. Aenean lobortis nibh nec imperdiet luctus. Donec sed tempor leo, sit amet lacinia nisl. Etiam convallis turpis vel odio eleifend tristique. Aenean est elit, condimentum eu velit eget, commodo feugiat nunc. Quisque eget rutrum purus, at vehicula magna. Nullam rutrum commodo erat, quis tempor nisl faucibus ut. Cras id ligula nec orci pulvinar pretium. Aliquam condimentum eros sed faucibus dictum. Aliquam vestibulum diam dolor, eu rhoncus nunc faucibus eget.",
+        "links": {
+          "github": "https://github.com/AmarOfficiel/curriculum-vitae",
+          "website": ""
+        }
+      }
+    ]
   },
   {
     "year": "2023",
-    "card": {
-      "image": {
-        "src": "/images/tokenLogo.png",
-        "alt": "This is the Token project logo"
+    "cards": [
+      {
+        "image": {
+          "src": "/images/lomatoutfaireLogo.png",
+          "alt": "This is the Token project logo"
+        },
+        "titleOfProject": "Lomatout Faire srl",
+        "dateOfInit": "21 - 27 August",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, neque vitae cursus fringilla, nisl felis fermentum lectus, eu mattis eros massa non lectus. Praesent eget enim lectus. Maecenas finibus varius congue. Integer tempor orci nisi. Donec cursus aliquet diam, at consequat ligula mollis in. Fusce a fermentum erat, a volutpat nulla. Aenean lobortis nibh nec imperdiet luctus. Donec sed tempor leo, sit amet lacinia nisl. Etiam convallis turpis vel odio eleifend tristique. Aenean est elit, condimentum eu velit eget, commodo feugiat nunc. Quisque eget rutrum purus, at vehicula magna. Nullam rutrum commodo erat, quis tempor nisl faucibus ut. Cras id ligula nec orci pulvinar pretium. Aliquam condimentum eros sed faucibus dictum. Aliquam vestibulum diam dolor, eu rhoncus nunc faucibus eget.",
+        "links":{
+          "github": "",
+          "website": "https://lomatoutfaire.be"
+        } 
       },
-      "titleOfProject": "Hackathon citizen of wallonia",
-      "dateOfInit": "10 - 12 march",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, neque vitae cursus fringilla, nisl felis fermentum lectus, eu mattis eros massa non lectus. Praesent eget enim lectus. Maecenas finibus varius congue. Integer tempor orci nisi. Donec cursus aliquet diam, at consequat ligula mollis in. Fusce a fermentum erat, a volutpat nulla. Aenean lobortis nibh nec imperdiet luctus. Donec sed tempor leo, sit amet lacinia nisl. Etiam convallis turpis vel odio eleifend tristique. Aenean est elit, condimentum eu velit eget, commodo feugiat nunc. Quisque eget rutrum purus, at vehicula magna. Nullam rutrum commodo erat, quis tempor nisl faucibus ut. Cras id ligula nec orci pulvinar pretium. Aliquam condimentum eros sed faucibus dictum. Aliquam vestibulum diam dolor, eu rhoncus nunc faucibus eget.",
-      "link": "https://github.com/AmarOfficiel/token-hackathon-2023"
-    }
+      {
+        "image": {
+          "src": "/images/tokenLogo.png",
+          "alt": "This is the Token project logo"
+        },
+        "titleOfProject": "Hackathon citizen of wallonia",
+        "dateOfInit": "10 - 12 March",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim, neque vitae cursus fringilla, nisl felis fermentum lectus, eu mattis eros massa non lectus. Praesent eget enim lectus. Maecenas finibus varius congue. Integer tempor orci nisi. Donec cursus aliquet diam, at consequat ligula mollis in. Fusce a fermentum erat, a volutpat nulla. Aenean lobortis nibh nec imperdiet luctus. Donec sed tempor leo, sit amet lacinia nisl. Etiam convallis turpis vel odio eleifend tristique. Aenean est elit, condimentum eu velit eget, commodo feugiat nunc. Quisque eget rutrum purus, at vehicula magna. Nullam rutrum commodo erat, quis tempor nisl faucibus ut. Cras id ligula nec orci pulvinar pretium. Aliquam condimentum eros sed faucibus dictum. Aliquam vestibulum diam dolor, eu rhoncus nunc faucibus eget.",
+        "links": {
+          "github": "https://github.com/AmarOfficiel/token-hackathon-2023",
+          "website": ""
+        }
+      }
+    ]
   }
 ]

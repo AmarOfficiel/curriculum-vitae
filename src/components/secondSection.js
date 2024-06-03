@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Title from "@/components/title.js";
 import TimelineElement from "@/components/timelineElement";
+import styles from "@/styles/secondSection.module.scss";
 
 export default function SecondSection({ timelineRef, setVisible }) {
   useEffect(() => {
@@ -15,7 +16,7 @@ export default function SecondSection({ timelineRef, setVisible }) {
     timelineRef.current && observer.observe(timelineRef.current);
   }, [timelineRef]);
   return (
-    <section ref={timelineRef}>
+    <section className={`${styles.container}`} ref={timelineRef}>
       <Title textTitle="History" />
       <TimelineElement />
     </section>
