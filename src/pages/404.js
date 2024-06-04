@@ -1,20 +1,31 @@
 import { useState, useEffect } from "react";
+import { Titillium_Web } from "next/font/google";
 import Title from "@/components/title.js";
 import styles from "@/styles/error404.module.scss";
 import Link from "next/link";
 import BtnCTA from "@/components/btnCTA.js";
 
+
+const TitilliumWeb = Titillium_Web({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-TitilliumWeb",
+});
+
+
 export default function Custom404() {
   return (
     <>
-      <section className={`text-paragraph ${styles.mainContainer}`}>
+      <section
+        className={`${TitilliumWeb.variable} text-paragraph ${styles.mainContainer}`}
+      >
         <div className={`${styles.containerTitle}`}>
           <Title textTitle="Error 404" />
         </div>
         <section className={`text-paragraph ${styles.containerCTAandCard}`}>
           <section className={`${styles.containerCardHistory}`}>
             <h2 className={`text-subtitle ${styles.itemHistoryTitle}`}>
-              History Of 404 page
+              History of the 404 page
             </h2>
             <section className={` ${styles.itemHistoryDescription}`}>
               <p>
