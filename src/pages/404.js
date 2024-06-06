@@ -14,18 +14,22 @@ const TitilliumWeb = Titillium_Web({
 
 
 export default function Custom404() {
+  const [text, setText] = useState(404);
+  const increase = () => {
+    setText((count) => count + 1);
+  };
   return (
     <>
       <section
         className={`${TitilliumWeb.variable} text-paragraph ${styles.mainContainer}`}
       >
-        <div className={`${styles.containerTitle}`}>
-          <Title textTitle="Error 404" />
+        <div className={`${styles.containerTitle}`} onClick={increase}>
+          <Title textTitle={`Error ${text}`} />
         </div>
         <section className={`text-paragraph ${styles.containerCTAandCard}`}>
           <section className={`${styles.containerCardHistory}`}>
             <h2 className={`text-subtitle ${styles.itemHistoryTitle}`}>
-              History of the 404 page
+              History of the {text} page
             </h2>
             <section className={` ${styles.itemHistoryDescription}`}>
               <p>
